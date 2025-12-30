@@ -3,6 +3,8 @@
 
 A smart contract written in Solidity (v0.8.24) that implements a basic calculator with arithmetic operations, demonstrating the use of events, modifiers, and internal functions. This contract is intended mainly for educational and learning purposes.
 
+
+
 📄 Overview
 
 The Calculator smart contract allows users to perform simple mathematical operations such as:
@@ -25,6 +27,8 @@ Internal functions (internal)
 
 Logical validation before function execution
 
+
+
 ⚙️ Technical Specifications
 
 Language: Solidity
@@ -34,6 +38,8 @@ Version: 0.8.24
 License: LGPL-3.0-only
 
 pragma solidity 0.8.24;
+
+
 
 🧮 State Variable
 uint256 public result = 10;
@@ -45,6 +51,8 @@ Initialized with the value 10
 
 Declared as public, so Solidity automatically generates a getter function
 
+
+
 🧱 Modifiers
 checkNumber
 modifier checkNumber(uint256 num1_)
@@ -55,6 +63,8 @@ Validates that the provided number is exactly 10
 Reverts the transaction if the condition is not met
 
 Used as an example of pre-execution logic control
+
+
 
 📢 Events
 ➕ Addition
@@ -68,6 +78,8 @@ event Substraction(uint256 number1, uint256 number2, uint256 result);
 
 
 Emitted when a subtraction operation is executed.
+
+
 
 🧩 External Functions
 ➕ addition
@@ -106,6 +118,8 @@ Multiplies the result only if num1_ equals 10
 
 Demonstrates practical usage of a modifier
 
+
+
 🔒 Internal Functions
 subtration_logic
 function subtration_logic(uint256 num1_, uint256 num2_) internal pure returns (uint256)
@@ -117,6 +131,8 @@ Declared as internal and pure
 
 Can only be called from within the contract
 
+
+
 🧪 Use Cases
 
 Learning basic smart contract structure
@@ -126,6 +142,8 @@ Practicing modifiers and events
 Educational example for Solidity courses
 
 Foundation for more advanced contracts
+
+
 
 🚀 Possible Improvements
 
@@ -139,9 +157,13 @@ Add unit tests (Hardhat / Foundry)
 
 Optimize gas usage with custom errors
 
+
+
 📜 License
 
 This project is licensed under the LGPL-3.0-only license.
+
+
 
 ✍️ Author
 
